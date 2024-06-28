@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgb(7, 47, 72), rgb(11, 58, 87));
+}
+body {
+  padding-top: 100px;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgb(7, 47, 72), rgb(11, 58, 87));
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+nav h2 {
+  margin-left: 4rem;
+  font-size: 2rem;
+  color: cyan;
+}
+
+.indiv a {
+  margin: 3vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgb(7, 47, 72), rgb(11, 58, 87));
+  display: flex;
+}
+.menubar {
+  display: none;
+}
+.links {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.9vw;
+}
+.links img {
+  height: 12vh;
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+}
+.links img:hover {
+  margin-left: 8px;
+}
+.left {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left h1 {
+  margin-top: 1vw;
+  margin-left: 12vw;
+  font-size: 5vw;
+}
+.left h1 span {
+  color: rgb(243, 154, 122);
+}
+.left p {
+  margin-top: 1vw;
+  margin-left: 12vw;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 80%;
+}
+.left p span {
+  color: rgb(54, 199, 199);
+}
+.left button {
+  margin-top: 1.8vw;
+  margin-left: 12vw;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  background-color: rgb(51, 146, 198);
+  border: none;
+  color: #fff;
+}
+.left button:hover {
+  box-shadow: 0 0 20px aqua;
+}
+
+.right {
+  height: 100%;
+  width: 45%;
+  position: relative;
+}
+.right img {
+  position: absolute;
+  bottom: 0;
+  right: 2vw;
+  height: 120%;
+  object-fit: cover;
+  filter: drop-shadow(0.35rem 0rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.about {
+  height: 100%;
+  background-color: rgb(22, 69, 99);
+  display: flex;
+  margin: 100px;
+  filter: drop-shadow(-0.35rem 0rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+.aboutleft {
+  height: 100%;
+  width: 40%;
+}
+.aboutleft img {
+  height: 61vh;
+  width: 26vw;
+  margin: 5rem;
+  border-radius: 50%;
+  filter: drop-shadow(-0.25rem 0.25rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+.aboutleft img:hover {
+  filter: grayscale(60%);
+  scale: 105%;
+  transition:filter 2s ease-in;
+}
+.aboutright {
+  height: 100%;
+  width: 60%;
+}
+.aboutright h1 {
+  font-size: 3.4rem;
+  margin-top: 1vw;
+  color: rgb(210, 203, 203);
+}
+.aboutright h2 {
+  font-size: 2vw;
+  margin-top: 4vw;
+  margin-left: 5vw;
+}
+.aboutright h3 {
+  font-size: 1.5vw;
+  margin-left: 5vw;
+  margin-top: 0.3vw;
+  color: rgb(54, 199, 199);
+}
+.aboutright p {
+  font-size: 1.3vw;
+  margin-left: 5vw;
+  margin-top: 1vw;
+  width: 80%;
+  text-align: left;
+  line-height: 1.7vw;
+  color: rgb(223, 211, 211);
+}
+.aboutright button {
+  margin-top: 1.8vw;
+  margin-left: 5vw;
+  color: black;
+  font-size: 1.5vw;
+  font-weight: 600;
+  padding: 0.6vw 1.5vw;
+  border-radius: 20px;
+  background-color: rgb(51, 146, 198);
+  border: none;
+  color: #fff;
+}
+.aboutright button:hover {
+  box-shadow: 0 0 20px aqua;
+}
+#heading {
+  margin-top: 2vw;
+  font-size: 5rem;
+  text-align: center;
+  color: rgb(210, 203, 203);
+}
+.project {
+  height: 100%;
+  background-color: rgb(22, 69, 99);
+  margin: 100px;
+  margin-top: 9vw;
+  filter: drop-shadow(-0.35rem 0rem 0.4rem rgba(0, 0, 0, 0.5));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.project h1 {
+  color: rgb(243, 154, 122);
+  margin-top: 2rem;
+}
+.project p {
+  width: 60%;
+  text-align: center;
+}
+.project img {
+  margin-top: 0.5rem;
+  height: 60vh;
+  width: 50vw;
+  border-radius: 5px;
+
+}
+.project img:hover{
+  filter: grayscale(60%);
+scale: 105%;
+transition: all .4s;
+}
+@media (max-width: 1000px) {
+  .container2 {
+    height: 100%;
+    width: 100%;
+    justify-content: left;
+    margin: 0;
+  }
+  .about {
+    background: none;
+    margin: 0;
+    margin-top: 4rem;
+  }
+  .aboutleft {
+    display: none;
+  }
+  .aboutright {
+    height: 100%;
+    width: 100%;
+  }
+  .aboutright h1 {
+    margin-top: 2vw;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .aboutright h2 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .aboutright h3 {
+    font-size: 1.3rem;
+    text-align: justify;
+    margin-top: 0.5rem;
+  }
+  .aboutright p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    width: 90%;
+    text-align: justify;
+    margin-top: 0.8rem;
+  }
+  .aboutright button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
+  .container {
+    height: 100%;
+  }
+  .menubar {
+    display: block;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .right {
+    display: none;
+  }
+  .links {
+    gap: 1vw;
+    justify-content: left;
+  }
+  .links img {
+    height: 9vh;
+    width: 7.2vw;
+    padding: 5px;
+  }
+  .left {
+    width: 100%;
+    background-image: url(pictures/pfp\ mob.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .left h1 {
+    margin-top: 280px;
+    font-size: 5vw;
+    margin-left: 0px;
+    line-height: 6vw;
+  }
+  .left p {
+    margin-top: 1.8vw;
+    font-size: 3.6vw;
+    width: 80%;
+    margin-left: 0px;
+    line-height: 4.8vw;
+  }
+  .left button {
+    margin-top: 2vw;
+    font-size: 2.8vw;
+    padding: 0.3rem 1rem;
+    margin-left: 0px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 400px) {
+  .left h1 {
+    margin-top: 300px;
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+  .left p {
+    font-size: 4.6vw;
+    width: 85%;
+    line-height: 6.7vw;
+  }
+  .left button {
+    font-size: 4vw;
+    padding: 2vw 5vw;
+  }
+  .links {
+    gap: 4vw;
+  }
+  .links img {
+    height: 8vh;
+    width: 16vw;
+  }
+}
