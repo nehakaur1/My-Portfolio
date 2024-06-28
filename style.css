@@ -142,7 +142,7 @@ nav h2 {
   filter: drop-shadow(-0.25rem 0.25rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 .aboutleft img:hover {
-  filter: grayscale(60%);
+  filter: grayscale(100%);
   scale: 105%;
   transition:filter 2s ease-in;
 }
@@ -213,20 +213,25 @@ nav h2 {
   margin-top: 2rem;
 }
 .project p {
+  font-size: 1.6vw;
+  font-weight: 600;
   width: 60%;
   text-align: center;
 }
 .project img {
   margin-top: 0.5rem;
   height: 60vh;
-  width: 50vw;
+  width: 55vw;
   border-radius: 5px;
 
 }
 .project img:hover{
-  filter: grayscale(60%);
+  filter: grayscale(100%);
 scale: 105%;
-transition: all .4s;
+transition: all .3s;
+}
+.project #lastpara{
+  margin-bottom:1rem;
 }
 @media (max-width: 1000px) {
   .container2 {
