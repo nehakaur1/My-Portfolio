@@ -144,7 +144,7 @@ nav h2 {
 .aboutleft img:hover {
   filter: grayscale(100%);
   scale: 105%;
-  transition:all .3s;
+  transition: all 0.3s;
 }
 .aboutright {
   height: 100%;
@@ -190,6 +190,7 @@ nav h2 {
 .aboutright button:hover {
   box-shadow: 0 0 20px aqua;
 }
+
 .project {
   height: 100%;
   background-color: rgb(22, 69, 99);
@@ -222,61 +223,51 @@ nav h2 {
   height: 60vh;
   width: 55vw;
   border-radius: 5px;
-
 }
-.project img:hover{
+.project img:hover {
   filter: grayscale(100%);
-scale: 105%;
-transition: all .3s;
+  scale: 105%;
+  transition: all 0.3s;
 }
-.project #lastpara{
-  margin-bottom:1rem;
+.project #lastpara {
+  margin-bottom: 1rem;
 }
 @media (max-width: 1000px) {
-  .container2 {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-  }
   .about {
-    height: 100%;
-    background: none;
-    margin:0px;
-    margin-top: 4rem;
-  }
-  .aboutleft {
-    display: none;
+    margin: 0;
   }
   .aboutright {
     height: 100%;
     width: 100%;
   }
+  .aboutleft {
+    display: none;
+  }
   .aboutright h1 {
-    margin-top: 2vw;
+    font-size: 2rem;
     text-align: center;
-    font-size: 2.5rem;
   }
   .aboutright h2 {
-    font-size: 1.5rem;
-    margin-top: 3rem;
-    width: 100%;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: justify;
   }
   .aboutright h3 {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     text-align: justify;
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
   }
   .aboutright p {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-    width: 90%;
+    font-size: 0.6rem;
+    line-height: 1rem;
     text-align: justify;
-    margin-top: 0.8rem;
+    width: 90%;
   }
   .aboutright button {
-    margin-top: 1rem;
-    font-size: 1rem;
-    padding: 0.6rem;
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 700px) {
@@ -332,42 +323,23 @@ transition: all .3s;
     margin-left: 0px;
     margin-bottom: 0;
   }
-  .aboutright h1 {
-    margin-top: 2vw;
-    font-size: 2.5rem;
+  .project {
+    margin: 0px;
   }
-  .aboutright h2 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-  }
-  .aboutright h3 {
-    font-size: 1rem;
-  }
-  .aboutright p {
-    font-size: .8rem;
-    line-height: 1.2rem;
-  }
-  .aboutright button {
-    margin-top: .9rem;
-    font-size: 2.7vw;
-  }
-
-  .project{
-    margin:0px;
-  }
-  .project img{
+  .project img {
     height: 100%;
     width: 90%;
   }
-  .project p{
+  .project p {
     display: none;
   }
-  #heading{
-    font-size:10vw;
+  #heading {
+    font-size: 10vw;
   }
-  .project h1{
+  .project h1 {
     font-size: 7vw;
-  }}
+  }
+}
 @media (max-width: 400px) {
   .left h1 {
     margin-top: 300px;
@@ -389,28 +361,5 @@ transition: all .3s;
   .links img {
     height: 8vh;
     width: 16vw;
-  }
-  .aboutright h1 {
-    margin-top: 2vw;
-    font-size: 2rem;
-  }
-  .aboutright h2 {
-    font-size: 1rem;
-    margin-top: 1rem;
-  }
-  .aboutright h3 {
-    font-size: .8rem;
-  }
-  .aboutright p {
-    font-size: .5rem;
-    line-height: normal;
-    margin-top:.2rem;
-  }
-  .aboutright button {
-    margin-top: 1rem;
-    font-size: 3vw;
-  }
-  .about{
-    margin-bottom: 0;
   }
 }
