@@ -80,7 +80,7 @@ nav h2 {
   margin-left: 12vw;
   font-size: 5vw;
 }
-.left h1 span {
+.left h1 span{
   color: rgb(243, 154, 122);
 }
 .left p {
@@ -108,7 +108,6 @@ nav h2 {
 .left button:hover {
   box-shadow: 0 0 20px aqua;
 }
-
 .right {
   height: 100%;
   width: 45%;
@@ -122,7 +121,10 @@ nav h2 {
   object-fit: cover;
   filter: drop-shadow(0.35rem 0rem 0.4rem rgba(0, 0, 0, 0.5));
 }
-
+.right img:hover{
+  transition: all .3s;
+  scale: 105%;
+}
 .about {
   height: 100%;
   background-color: rgb(22, 69, 99);
@@ -190,7 +192,55 @@ nav h2 {
 .aboutright button:hover {
   box-shadow: 0 0 20px aqua;
 }
-
+.education {
+  background-color: rgb(22, 69, 99);
+  margin: 100px;
+  filter: drop-shadow(-0.35rem 0rem 0.4rem rgba(0, 0, 0, 0.5));
+  padding-bottom: 1rem;
+}
+.education h1 {
+  font-size: 3.4rem;
+  text-align: center;
+  padding: 1rem;
+  color: rgb(210, 203, 203);
+}
+.edu {
+  height: 20%;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: rgb(223, 211, 211);
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  filter: drop-shadow(0.35rem 0.35rem 0.3rem rgba(0, 0, 0, 0.5));
+  margin-bottom: 2rem;
+}
+.edu:hover{
+  transition: all .3s;
+  scale: 105%;
+}
+.leftedu img {
+  height: 100%;
+  padding: 0.5rem;
+}
+.rightedu h3{
+  color: black;
+  font-size: 2vw;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.rightedu h5{
+  color: gray; 
+  font-size:1.3vw ;
+  margin-top:.4rem;
+  margin-left: 2rem;
+}
+.rightedu p{
+  font-weight: 600;
+  margin-left: 2rem;
+  margin-top: .4rem;
+  color: rgb(88, 144, 88);
+}
 .project {
   height: 100%;
   background-color: rgb(22, 69, 99);
@@ -269,6 +319,30 @@ nav h2 {
     padding: 0.6rem 0.8rem;
     margin-bottom: 1rem;
   }
+  .education{
+    margin: 0;
+  }
+  .leftedu{
+    display: none;
+  }
+  .rightedu h3{
+    font-size: 3.5vw;
+    margin-top: .7rem;
+    margin-left: 2rem;
+  }
+  .rightedu h5{
+    font-size:2.6vw ;
+    margin-top:.2rem;
+    margin-left: 2rem;
+  }
+  .rightedu p{
+    font-size: 3vw;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-top: .4rem;
+    margin-bottom: 1rem;
+    color: rgb(88, 144, 88);
+  }
 }
 @media (max-width: 700px) {
   nav {
@@ -304,21 +378,21 @@ nav h2 {
     background-repeat: no-repeat;
   }
   .left h1 {
-    margin-top: 280px;
-    font-size: 5vw;
+    margin-top: 15rem;
+    font-size: 1.5rem;
     margin-left: 0px;
-    line-height: 6vw;
+    line-height: 2rem;
   }
   .left p {
-    margin-top: 1.8vw;
-    font-size: 3.6vw;
+    margin-top: .2rem;
+    font-size: .8rem;
     width: 80%;
     margin-left: 0px;
-    line-height: 4.8vw;
+    line-height: 1.3rem;
   }
   .left button {
-    margin-top: 2vw;
-    font-size: 2.8vw;
+    margin-top: .5rem;
+    font-size: .7rem;
     padding: 0.3rem 1rem;
     margin-left: 0px;
     margin-bottom: 0;
@@ -342,14 +416,14 @@ nav h2 {
 }
 @media (max-width: 400px) {
   .left h1 {
-    margin-top: 300px;
-    font-size: 8vw;
-    line-height: 8vw;
+    margin-top: 12rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
   }
   .left p {
-    font-size: 4.6vw;
+    font-size: .6rem;
     width: 85%;
-    line-height: 6.7vw;
+    line-height: 1rem;
   }
   .left button {
     font-size: 4vw;
@@ -361,5 +435,27 @@ nav h2 {
   .links img {
     height: 8vh;
     width: 16vw;
+  }
+.edu{
+width: 100%;
+margin: 20px 10px;
+  }
+  .rightedu h3{
+    font-size: 4vw;
+    margin-top: .7rem;
+    margin-left: 1rem;
+  }
+  .rightedu h5{
+    font-size:4vw ;
+    margin-top:.2rem;
+    margin-left: 1rem;
+  }
+  .rightedu p{
+    font-size: 4vw;
+    font-weight: 600;
+    margin-left: 1rem;
+    margin-top: .4rem;
+    margin-bottom: 1rem;
+    color: rgb(88, 144, 88);
   }
 }
