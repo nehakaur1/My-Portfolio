@@ -283,12 +283,22 @@ nav h2 {
   margin-bottom: 1rem;
 }
 @media (max-width: 1000px) {
-  .about {
-    margin: 0;
+  .indiv a{
+    margin: 2vw;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .left{
+    width: 100%;
+  }
+  .right{
+    display: none;
   }
   .aboutright {
     height: 100%;
     width: 100%;
+    right: 0;
   }
   .aboutleft {
     display: none;
@@ -395,7 +405,7 @@ nav h2 {
     font-size: .7rem;
     padding: 0.3rem 1rem;
     margin-left: 0px;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
   .project {
     margin: 0px;
