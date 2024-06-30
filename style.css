@@ -56,8 +56,8 @@ nav h2 {
   gap: 0.9vw;
 }
 .links img {
-  height: 12vh;
-  width: 5vw;
+  height: 4rem;
+  width: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,10 +121,6 @@ nav h2 {
   object-fit: cover;
   filter: drop-shadow(0.35rem 0rem 0.4rem rgba(0, 0, 0, 0.5));
 }
-.right img:hover{
-  transition: all .3s;
-  scale: 105%;
-}
 .about {
   height: 100%;
   background-color: rgb(22, 69, 99);
@@ -144,7 +140,6 @@ nav h2 {
   filter: drop-shadow(-0.25rem 0.25rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 .aboutleft img:hover {
-  filter: grayscale(100%);
   scale: 105%;
   transition: all 0.3s;
 }
@@ -283,6 +278,10 @@ nav h2 {
   margin-bottom: 1rem;
 }
 @media (max-width: 1000px) {
+ /* .links img{
+  height: 10;
+  width: 4rem;
+ } */
   .indiv a{
     margin: 2vw;
   }
@@ -377,11 +376,7 @@ nav h2 {
     gap: 1vw;
     justify-content: left;
   }
-  .links img {
-    height: 9vh;
-    width: 7.2vw;
-    padding: 5px;
-  }
+  
   .left {
     width: 100%;
     background-image: url(pictures/pfp\ mob.png);
@@ -444,10 +439,6 @@ nav h2 {
   }
   .links {
     gap: 4vw;
-  }
-  .links img {
-    height: 8vh;
-    width: 16vw;
   }
 .edu{
 width: 100%;
