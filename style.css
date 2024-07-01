@@ -11,6 +11,7 @@ body {
   height: 100%;
   width: 100%;
   background: linear-gradient(to right, rgb(7, 47, 72), rgb(11, 58, 87));
+  scroll-behavior: smooth;
 }
 body {
   padding-top: 100px;
@@ -37,6 +38,10 @@ nav h2 {
   margin: 3vw;
   font-size: 1.5vw;
   font-weight: 600;
+  text-decoration: none;
+}
+.indiv a:hover {
+color:rgb(243, 154, 122) ;
 }
 .container {
   height: 100%;
