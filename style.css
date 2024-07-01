@@ -348,7 +348,7 @@ textarea:hover {
   cursor: text;
 }
 .rightcon textarea {
-  height: 50%;
+  /* height: 80%; */
   width: 80%;
   background-color: #d9d9d9;
   padding: 10px;
