@@ -420,9 +420,7 @@ footer {
   font-weight: 600;
 }
 @media(min-width:1098px) {
-  .right img{
-    right:0vw;
-  }
+  
   .left p{
     margin-left: 6vw;
     line-height: 1.5rem;
@@ -444,8 +442,10 @@ footer {
   }
   .left h1 {
     font-size: 4vw;
+    margin-left: 12vw;
   }
   .left p {
+    margin-left: 12vw;
     font-size: 1.3rem;
     line-height: 2rem;
   }
