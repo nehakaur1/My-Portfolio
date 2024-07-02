@@ -419,7 +419,7 @@ footer {
   margin-top: 2rem;
   font-weight: 600;
 }
-@media(min-width:1099px ) {
+@media(max-width:1099px ) {
   
   .left p{
     margin-left: 6vw;
@@ -429,7 +429,7 @@ footer {
     margin-left: 6vw;
   }
 }
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .container {
     height: 60%;
   }
@@ -455,7 +455,6 @@ footer {
   .indiv a {
     margin: 2vw;
   }
-
   .about {
     height: 100%;
     width: 100%;
