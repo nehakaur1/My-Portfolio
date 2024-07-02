@@ -419,8 +419,7 @@ footer {
   margin-top: 2rem;
   font-weight: 600;
 }
-@media(max-width:1099px ) {
-  
+@media(max-width:1100px ) { 
   .left p{
     margin-left: 6vw;
     line-height: 1.5rem;
