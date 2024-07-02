@@ -64,6 +64,7 @@ color:rgb(243, 154, 122) ;
   flex-direction: column;
    position: fixed;
   display: none;  
+  filter: drop-shadow(-0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
  .menubar a{
   text-decoration: none;
@@ -71,10 +72,10 @@ color:rgb(243, 154, 122) ;
 #menubar_icon2{
   background-color:rgb(183, 45, 45); 
   color: #fff;
-  font-size:1.5rem;
- position: absolute;
- top: 0;
- right: 0;
+  font-size:2.5rem;
+   position: absolute;
+   top: 0;
+   right: 0;
 }
 .menubar .option{
   color:rgb(243, 154, 122); 
@@ -395,14 +396,15 @@ textarea:hover {
   filter: drop-shadow(0.15rem 0.15rem 0.1rem rgba(0, 0, 0, 0.2));
 }
 .rightcon button {
-  width: 120px;
+  width: 140px;
   height: 60px;
   border: none;
   background-color: rgb(51, 146, 198);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-left: 4rem;
   margin-top: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 7rem;
+
 }
 .rightcon button:hover {
   box-shadow: 0 0 15px rgb(51, 146, 198);
@@ -417,6 +419,18 @@ footer {
   margin-top: 2rem;
   font-weight: 600;
 }
+@media(min-width:1098px) {
+  .right img{
+    right:0vw;
+  }
+  .left p{
+    margin-left: 6vw;
+    line-height: 1.5rem;
+  }
+  .left h1{
+    margin-left: 6vw;
+  }
+}
 @media (max-width: 1000px) {
   .container {
     height: 60%;
@@ -429,12 +443,11 @@ footer {
     display: none;
   }
   .left h1 {
-    margin-top: 1rem;
     font-size: 4vw;
   }
   .left p {
-    font-size: 3vw;
-    line-height: 7vw;
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
   .left button {
     margin-top: 1rem;
@@ -549,9 +562,6 @@ footer {
     top: 0;
     right: 0;
   }
-  /* .menubar{
-    display: none;
-  } */
   .right {
     display: none;
   }
@@ -561,6 +571,7 @@ footer {
   }
 
   .left {
+    height: 100%;
     width: 100%;
     background-image: url(pictures/pfp\ mob.png);
     background-size: cover;
@@ -586,8 +597,8 @@ footer {
     padding: 0.3rem 1rem;
     margin-left: 0px;
     margin-bottom: 1rem;
+    
   }
-
   .project {
     margin: 0px;
   }

@@ -13,11 +13,14 @@ let menubar = document.querySelector(".menubar");
 
 menubar_icon.addEventListener("click", () => {
   menubar_icon.style.display = "none";
+  
   menubar.style.display = "block";
 });
 menubar_icon2.addEventListener("click", () => {
   menubar.style.display = "none";
+  if (window.innerWidth < 700) {
   menubar_icon.style.display = "block";
+  }
 });
 
 menubar.addEventListener("click", () => {
