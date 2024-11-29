@@ -1,0 +1,704 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgb(7, 47, 72), rgb(11, 58, 87));
+  scroll-behavior: smooth;
+}
+body {
+  padding-top: 100px;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgb(7, 47, 72), rgb(11, 58, 87));
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+nav h2 {
+  margin-left: 4rem;
+  font-size: 2rem;
+  color: cyan;
+}
+
+.indiv a {
+  margin: 2vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  text-decoration: none;
+}
+.indiv a:hover {
+color:rgb(243, 154, 122) ;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgb(7, 47, 72), rgb(11, 58, 87));
+  display: flex;
+}
+.menubar_icon {
+  display: none;
+}
+.menubar{
+  height: 100%;
+  width: 250px;
+  background-color: rgba( 255,255,255,0.2);
+  backdrop-filter: blur(7px);
+  z-index: 1;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+   position: fixed;
+  display: none;  
+  filter: drop-shadow(-0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+ .menubar a{
+  text-decoration: none;
+ }
+#menubar_icon2{
+  background-color:rgb(183, 45, 45); 
+  color: #fff;
+  font-size:2.5rem;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+.menubar .option{
+  color:rgb(243, 154, 122); 
+   font-size:1.8rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.links {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.9vw;
+}
+.links img {
+  height: 4rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+}
+.links img:hover {
+  margin-left: 8px;
+}
+.left {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left h1 {
+  margin-top: 1vw;
+  margin-left: 12vw;
+  font-size: 5vw;
+}
+.left h1 span {
+  color: rgb(243, 154, 122);
+}
+.left p {
+  margin-top: 1vw;
+  margin-left: 12vw;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 80%;
+}
+.left p span {
+  color: rgb(54, 199, 199);
+}
+.left button {
+  margin-top: 1.8vw;
+  margin-left: 12vw;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  background-color: rgb(51, 146, 198);
+  border: none;
+  color: #fff;
+}
+.left button:hover {
+  box-shadow: 0 0 20px aqua;
+}
+.right {
+  height: 100%;
+  width: 45%;
+  position: relative;
+}
+.right img {
+  position: absolute;
+  bottom: 0;
+  right: 2vw;
+  height: 120%;
+  object-fit: cover;
+  filter: drop-shadow(0.35rem 0rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+.about {
+  height: 100%;
+  background-color: rgb(22, 69, 99);
+  display: flex;
+  margin: 100px;
+  filter: drop-shadow(-0.35rem 0rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+.aboutleft {
+  height: 100%;
+  width: 40%;
+}
+.aboutleft img {
+  height: 61vh;
+  width: 26vw;
+  margin: 5rem;
+  border-radius: 50%;
+  filter: drop-shadow(-0.25rem 0.25rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+.aboutleft img:hover {
+  scale: 105%;
+  transition: all 0.3s;
+}
+.aboutright {
+  height: 100%;
+  width: 60%;
+}
+.aboutright h1 {
+  font-size: 3.4rem;
+  margin-top: 1vw;
+  color: rgb(210, 203, 203);
+}
+.aboutright h2 {
+  font-size: 2vw;
+  margin-top: 4vw;
+  margin-left: 5vw;
+}
+.aboutright h3 {
+  font-size: 1.5vw;
+  margin-left: 5vw;
+  margin-top: 0.3vw;
+  color: rgb(54, 199, 199);
+}
+.aboutright p {
+  font-size: 1.3vw;
+  margin-left: 5vw;
+  margin-top: 1vw;
+  width: 80%;
+  text-align: left;
+  line-height: 1.7vw;
+  color: rgb(223, 211, 211);
+}
+.aboutright button {
+  margin-top: 1.8vw;
+  margin-left: 5vw;
+  color: black;
+  font-size: 1.5vw;
+  font-weight: 600;
+  padding: 0.6vw 1.5vw;
+  border-radius: 20px;
+  background-color: rgb(51, 146, 198);
+  border: none;
+  color: #fff;
+}
+.aboutright button:hover {
+  box-shadow: 0 0 20px rgb(51, 146, 198);
+}
+.education {
+  background-color: rgb(22, 69, 99);
+  margin: 100px;
+  filter: drop-shadow(-0.35rem 0rem 0.4rem rgba(0, 0, 0, 0.5));
+  padding-bottom: 1rem;
+}
+.education h1 {
+  font-size: 3.4rem;
+  text-align: center;
+  padding: 1rem;
+  color: rgb(210, 203, 203);
+}
+.edu {
+  height: 20%;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: rgb(223, 211, 211);
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  filter: drop-shadow(0.35rem 0.35rem 0.3rem rgba(0, 0, 0, 0.5));
+  margin-bottom: 2rem;
+}
+.edu:hover {
+  transition: all 0.3s;
+  scale: 105%;
+}
+.leftedu img {
+  height: 100%;
+  padding: 0.5rem;
+}
+.rightedu h3 {
+  color: black;
+  font-size: 2vw;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.rightedu h5 {
+  color: gray;
+  font-size: 1.3vw;
+  margin-top: 0.4rem;
+  margin-left: 2rem;
+}
+.rightedu p {
+  font-weight: 600;
+  margin-left: 2rem;
+  margin-top: 0.4rem;
+  color: rgb(88, 144, 88);
+}
+.project {
+  height: 100%;
+  background-color: rgb(22, 69, 99);
+  margin: 100px;
+  filter: drop-shadow(-0.35rem 0rem 0.4rem rgba(0, 0, 0, 0.5));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#heading {
+  margin-top: 2vw;
+  font-size: 5rem;
+  text-align: center;
+  color: rgb(210, 203, 203);
+}
+.project h1 {
+  color: rgb(243, 154, 122);
+  margin-top: 2rem;
+}
+.project p {
+  font-size: 1.6vw;
+  font-weight: 600;
+  width: 60%;
+  text-align: center;
+}
+.project img {
+  margin-top: 0.5rem;
+  height: 60vh;
+  width: 55vw;
+  border-radius: 5px;
+}
+.project img:hover {
+  filter: grayscale(100%);
+  scale: 105%;
+  transition: all 0.3s;
+}
+.project #lastpara {
+  margin-bottom: 1rem;
+}
+.contact {
+  width: 100%;
+  display: flex;
+}
+.leftcon {
+  height: 100%;
+  width: 40%;
+  padding: 20px;
+}
+.leftcon h1 {
+  font-size: 4rem;
+  color: rgb(210, 203, 203);
+  text-align: center;
+  margin-top: 0;
+}
+.email {
+  display: flex;
+  margin-left: 3rem;
+  margin-top: 2.6rem;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+.phone {
+  display: flex;
+  margin-left: 3rem;
+  margin-top: 1.3rem;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+.phone i {
+  color: #15b851;
+}
+.social {
+  display: flex;
+  font-size: 3rem;
+  margin: 3rem;
+  margin-top: 1.4rem;
+  gap: 1rem;
+}
+.social i {
+  color: rgb(188, 85, 85);
+}
+.rightcon {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.rightcon input {
+  width: 80%;
+  height: 15%;
+  padding: 10px;
+  background-color: #d9d9d9;
+  border: 1px solid black;
+  margin-left: 3rem;
+  border-radius: 0.3rem;
+  color: black;
+  outline: none;
+  filter: drop-shadow(0.15rem 0.15rem 0.1rem rgba(0, 0, 0, 0.2));
+}
+
+.rightcon input,
+textarea:hover {
+  cursor: text;
+}
+.rightcon textarea {
+  /* height: 80%; */
+  width: 80%;
+  background-color: #d9d9d9;
+  padding: 10px;
+  margin-left: 3rem;
+  border-radius: 0.3rem;
+  outline: none;
+  color: black;
+  filter: drop-shadow(0.15rem 0.15rem 0.1rem rgba(0, 0, 0, 0.2));
+}
+.rightcon button {
+  width: 140px;
+  height: 60px;
+  border: none;
+  background-color: rgb(51, 146, 198);
+  font-size: 1.3rem;
+  margin-left: 4rem;
+  margin-top: 0.5rem;
+  border-radius: 7rem;
+
+}
+.rightcon button:hover {
+  box-shadow: 0 0 15px rgb(51, 146, 198);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  background-color: rgb(22, 69, 99);
+  color: white;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+@media(max-width:1100px ) { 
+  .left p{
+    margin-left: 3vw;
+    line-height: 1.9rem;
+    margin-top: 1rem;
+  }
+  .left h1{
+    margin-left: 3vw;
+  margin-top: 10rem;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    height: 60%;
+  }
+  .left {
+    height: 80%;
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+  .left h1 {
+    font-size: 4vw;
+    margin-left: 12vw;
+  }
+  .left p {
+    margin-left: 12vw;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .left button {
+    margin-top: 1rem;
+  }
+  .indiv a {
+    margin: 2vw;
+  }
+  .about {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .aboutright {
+    height: 100%;
+    width: 100%;
+    right: 0;
+  }
+  .aboutleft {
+    display: none;
+  }
+  .aboutright h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .aboutright h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: justify;
+  }
+  .aboutright h3 {
+    font-size: 0.8rem;
+    text-align: justify;
+    margin-top: 0.3rem;
+  }
+  .aboutright p {
+    font-size: 0.6rem;
+    line-height: 1rem;
+    text-align: justify;
+    width: 90%;
+  }
+  .aboutright button {
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .education {
+    margin: 0;
+  }
+  .leftedu {
+    display: none;
+  }
+  .rightedu h3 {
+    font-size: 3.5vw;
+    margin-top: 0.7rem;
+    margin-left: 2rem;
+  }
+  .rightedu h5 {
+    font-size: 2.6vw;
+    margin-top: 0.2rem;
+    margin-left: 2rem;
+  }
+  .rightedu p {
+    font-size: 3vw;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    color: rgb(88, 144, 88);
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .leftcon {
+    width: 100%;
+    justify-content: center;
+  }
+  .leftcon h1 {
+    font-size: 9vw;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .rightcon {
+    width: 100%;
+  }
+  .email {
+    margin-left: 10rem;
+    margin-top: 4rem;
+  }
+  .phone {
+    margin-left: 10rem;
+    margin-top: 3rem;
+  }
+  .social {
+    margin-left: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 0.2rem;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
+  .container {
+    height: 100%;
+  }
+  .menubar_icon {
+    display: block;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .right {
+    display: none;
+  }
+  .links {
+    gap: 1vw;
+    justify-content: left;
+  }
+
+  .left {
+    height: 100%;
+    width: 100%;
+    background-image: url(pictures/pfp\ mob.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .left h1 {
+    margin-top: 15rem;
+    font-size: 1.5rem;
+    margin-left: 0px;
+    line-height: 2rem;
+  }
+  .left p {
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+    width: 80%;
+    margin-left: 0px;
+    line-height: 1.3rem;
+  }
+  .left button {
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    padding: 0.3rem 1rem;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+    
+  }
+  .project {
+    margin: 0px;
+  }
+  .project img {
+    height: 100%;
+    width: 90%;
+  }
+  .project p {
+    display: none;
+  }
+  #heading {
+    font-size: 10vw;
+  }
+  .project h1 {
+    font-size: 7vw;
+  }
+  .email {
+    margin-left: 0.3rem;
+    margin-top: 4rem;
+  }
+  .phone {
+    margin-left: 0.3rem;
+    margin-top: 3rem;
+  }
+  .social {
+    margin-left: 0.3rem;
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  .left h1 {
+    margin-top: 12rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .left p {
+    font-size: 0.6rem;
+    width: 85%;
+    line-height: 1rem;
+  }
+  .left button {
+    font-size: 4vw;
+    padding: 2vw 5vw;
+  }
+  .links {
+    gap: 4vw;
+  }
+  .edu {
+    width: 100%;
+    margin: 20px 10px;
+  }
+  .rightedu h3 {
+    font-size: 4vw;
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+  }
+  .rightedu h5 {
+    font-size: 4vw;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+  }
+  .rightedu p {
+    font-size: 4vw;
+    font-weight: 600;
+    margin-left: 1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    color: rgb(88, 144, 88);
+  }
+  .leftcon {
+    height: 50%;
+  }
+  .leftcon h1 {
+    margin-top: 2rem;
+  }
+  .email {
+    font-size: 5vw;
+    margin-top: 2rem;
+  }
+  .phone {
+    margin-top: 2rem;
+    font-size: 5vw;
+  }
+  .social {
+    margin-top: 2rem;
+    font-size: 10vw;
+  }
+  .rightcon input {
+    margin-left: 1rem;
+    font-size: 4vw;
+    padding: 3px;
+  }
+  .rightcon textarea {
+    margin-left: 1rem;
+    font-size: 4vw;
+    padding: 3px;
+  }
+  .rightcon button {
+    width: 35vw;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+  }
+}
